@@ -44,7 +44,7 @@ def merge(A,B):
         j += 1
     return f'MERGE - {C}'
 
-def merge_sort(A):
+def merge_sort(A):                      # sth in this part does not work
     n = int(len(A) + 1)
     if n > 0:
         q = math.floor(n/2)
