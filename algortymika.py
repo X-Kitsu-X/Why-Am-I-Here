@@ -26,6 +26,8 @@ def bubble_sort(A):
     return f'BUBBLE SORT - {A}'
 
 def merge(A,B):
+    n = len(A) - 1
+    m = len(B) - 1
     i = 0
     j = 0
     C = []
@@ -39,12 +41,12 @@ def merge(A,B):
     while i <= n:
         C.append(A[i])
         i += 1
-    while j<= 1:
+    while j <= m:
         C.append(B[j])
         j += 1
     return f'MERGE - {C}'
 
-def merge_sort(A):                      # sth in this part does not work
+def merge_sort(A):                     
     n = int(len(A) + 1)
     if n > 0:
         q = math.floor(n/2)
