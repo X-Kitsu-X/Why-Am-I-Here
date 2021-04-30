@@ -85,7 +85,7 @@ def merge_time(A):
 testlist = []
 list_len = int(input('List lenght: '))
 for i in range(list_len):
-    testlist.append(random.randint(0,1000000))
+    testlist.append(random.randint(0,10000))
 
 
 print(merge_sort(testlist))
